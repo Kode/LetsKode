@@ -2,22 +2,23 @@
 layout: default
 ---
 
-<div class="home">
+<main class="content" role="main">
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+    <article class="preview">
+        <header>
+            <h1 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+            <div class="post-meta"><time datetime="{{post.date format='YYYY-MM-DD'}}">{{post.date format="dddd, MMMM DD, YYYY"}}</time></div>
+        </header>
+        <section class="post-excerpt">
+            <p>{{ post.excerpt }}&hellip;</p>
+            <p class="readmore"><a href="{{ post.url | prepend: site.baseurl }}">Read this article <i class="fa fa-chevron-circle-right"></i></a></p>
+        </section>
+    </article>
+
     {% endfor %}
-  </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    {{pagination}}
 
-</div>
+</main>
