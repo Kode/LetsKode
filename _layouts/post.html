@@ -3,14 +3,13 @@ layout: default
 ---
 <main class="content" role="main">
 
-    <article class="{{post_class}}">
+    <article class="post">
 
         {{#post}}
 
         <header>
-        {{#if tags}}<div class="post-meta tags">Posted in {{tags}}</div>{{/if}}
         <h1 class="post-title">{{ page.title }}</h1>
-        <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time></div>
+        <div class="post-meta"><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%A, %B %d, %Y' }}</time></div>
         </header>
 
         <section class="post-content">
@@ -35,22 +34,16 @@ layout: default
 
         <footer class="post-footer">
 
-            {{#if author}}
+            {% if page.author %}
             <section class="author">
-                <div class="authorimage" style="background: url({{author.image}})"></div>
                 <p class="attr">Author</p>
-                <h4><a href="{{author.website}}">{{author.name}}</a></h4>
-                <p class="bio">{{author.bio}}</p>
+                <h4><a href="{{page.authorlink}}">{{ page.author }}</a></h4>
             </section>
-            {{/if}}
+            {% endif %}
 
         </footer>
 
         {{/post}}
-
-        {{!> comments-disqus}}
-        {{!> comments-facebook}}
-        {{!> comments-google-plus}}
 
     <a id="nodebb/comments"></a>
     <script type="text/javascript">

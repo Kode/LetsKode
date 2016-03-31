@@ -18,20 +18,18 @@
 
     {{ghost_head}}
 </head>
-<body class="{{body_class}}">
+<body class="post-template">
 
     <header id="site-head">
-        {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><div class="bloglogo" style="background: url({{@blog.logo}})"></div></a>{{/if}}
-        <h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+        <h1 class="blog-title"><a href="http://kode.tech">The Kode Project</a></h1>
         <h2 class="blog-description"><a href="http://kode.tech">The Blog</a> - <a href="http://kode.tech/project">The Project</a> - <a href="http://wiki.kode.tech">The Docs</a> - <a href="http://forum.kode.tech">The Forum</a></h2>
-        {{!> menu}}
     </header>
 
     {{ content }}
 
     <footer class="site-footer">
         <div class="inner">
-            {{!> footer-description}}
+            {% include footer-description.html %}
             <section class="copyright">&copy; {{date format="YYYY"}} <a href="http://www.ktx-software.com">KTX Software Development</a>. All rights reserved.</section>
             <section>Vapor theme by <a href="http://sethlilly.com/">Seth Lilly</a></section>
         </div>

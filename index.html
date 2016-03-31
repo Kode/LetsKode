@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <main class="content" role="main">
 
     {% for post in site.posts %}
@@ -9,7 +8,7 @@ layout: default
     <article class="preview">
         <header>
             <h1 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
-            <div class="post-meta"><time datetime="{{post.date format='YYYY-MM-DD'}}">{{post.date format="dddd, MMMM DD, YYYY"}}</time></div>
+            <div class="post-meta"><time datetime="{{post.date | date: '%Y-%m-%d'}}">{{post.date | date: '%A, %B %d, %Y'}}</time></div>
         </header>
         <section class="post-excerpt">
             <p>{{ post.excerpt }}&hellip;</p>
