@@ -10,7 +10,7 @@ title: Kode
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   It's Kode.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://kode.tech" # the base hostname & protocol for your site
 twitter_username: robdangerous
 github_username:  RobDangerous
