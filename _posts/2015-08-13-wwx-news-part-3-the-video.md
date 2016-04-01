@@ -6,4 +6,4 @@ author:     Robert Konrad
 authorlink: http://robdangero.us
 permalink:  wwx-news-part-3-the-video
 ---
-It was finally uploaded last week: https://www.youtube.com/watch?v=vGQjlfq7BwI
+It was finally uploaded last week: [https://www.youtube.com/watch?v=vGQjlfq7BwI](https://www.youtube.com/watch?v=vGQjlfq7BwI)
