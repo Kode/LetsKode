@@ -15,6 +15,9 @@ url: "http://kode.tech" # the base hostname & protocol for your site
 twitter_username: robdangerous
 github_username:  RobDangerous
 excerpt_separator: "\n"
+paginate: 5
 
 # Build settings
 markdown: kramdown
+
+gems: [jekyll-paginate]
