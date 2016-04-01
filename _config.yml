@@ -14,6 +14,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://kode.tech" # the base hostname & protocol for your site
 twitter_username: robdangerous
 github_username:  RobDangerous
+excerpt_separator: "\n"
 
 # Build settings
 markdown: kramdown
