@@ -16,7 +16,7 @@ The world of software is a world of bugs, compatibility problems and performance
 * Easy replication of the whole thing.
 * Fully versioned local fixes to all dependencies.
 
-Any yet all of this seems to be low priority for package managers, if possible at all.
+And yet all of this seems to be low priority for package managers, if possible at all.
 
 Versioning systems on the other hand tend to solve that. They usually provide some sort of dependency system. In git that's called submodules. Submodules are a little cumbersome to use, but at least they get the basics right. By default you get all revisions. The revision of every submodule is always recorded so local fixes are versioned. When you copy the directory tree, you get everything - you can then work offline or setup your own git server.
 
