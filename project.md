@@ -14,4 +14,4 @@ Let's Kode aims to make it viable again to implement multimedia applications (li
 [krafix](https://github.com/KTXSoftware/krafix) is a shader cross-compiler. Shader languages for running code on the GPU are platform specific but using krafix you can write your shaders once in GLSL and everything else is taken care of.
 
 # Kode Studio
-February 2016...
+[Kode Studio](https://github.com/KTXSoftware/KodeStudio/releases) is an IDE for Kha based on Visual Studio Code.
