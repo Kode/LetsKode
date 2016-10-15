@@ -3,6 +3,8 @@ layout: page
 title: The Projects
 permalink: /projects/
 ---
+This is a collection of software which makes it viable to implement multimedia applications (like for example games) from scratch.
+
 # Kha and Kore
 [Kha](http://kha.tech) and [Kore](https://github.com/KTXSoftware/Kore) are multimedia frameworks for Haxe and C++ respectively (with JavaScript coming soon). Using Kha or Kore you can access all hardware at the lowest possible level in a completely portable way.
 
