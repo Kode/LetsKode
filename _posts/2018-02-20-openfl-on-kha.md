@@ -22,7 +22,7 @@ Undecided on whether to help out with that? Let me help you out with all the pro
 ### Cons:
 * Kha's free console support might negatively impact current non-free efforts to get OpenFL and/or Flixel games running on consoles.
 * I totally plan to subvert all OpenFL developers into using Kha's own APIs.
-* This won't be able to use Kha's <canvas> fallback as it will basically be a rewrite of OpenFL's OpenGL code to instead use Kha's G4 API. The reasonable thing to do will be to fall back to OpenFL's own non-WebGL browser support when WebGL is not available.
+* This won't be able to use Kha's &lt;canvas&gt; fallback as it will basically be a rewrite of OpenFL's OpenGL code to instead use Kha's G4 API. The reasonable thing to do will be to fall back to OpenFL's own non-WebGL browser support when WebGL is not available.
 * Performance will stay the same for the same reason - this won't change how rendering works in OpenFL. I can sure help with performance later on but that's not part of this pitch.
 
 Choose wisely, I’m anxious to find out whether there’s enough demand for this to justify this large investment.
