@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      A Pitch for OpenFL on Kha
-date:       2018-20-02 06:36:00 +0200
+date:       2018-02-20 06:36:00 +0200
 author:     Robert Konrad
 authorlink: http://robdangero.us
 permalink:  openfl-on-kha
