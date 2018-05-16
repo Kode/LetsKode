@@ -18,16 +18,15 @@ or one takes control of the rendering loop itself.
 while (true) {
 	doSomeStuff();
 	
-    // Handle os events and the like.
-    // If you don't do this regularly,
-    // the os will generally assume that
-    // your application is not responding.
-    systemEvents();
-    
-    // Feed some work to your GPU
+	// Handle os events and the like.
+	// If you don't do this regularly,
+	// the os will generally assume that
+	// your application is not responding.
+	systemEvents();
+
+	// Feed some work to your GPU
 	myFancyDrawingFunction();
     
-    // On some systems you don't have to do this
 	waitForVSync();
 }
 ```
